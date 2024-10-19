@@ -1,0 +1,17 @@
+plugins {
+    id "application"
+}
+
+application {
+    mainClass = "com.xujiayao.bmw_brx_media_converter.Main"
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
+}
+
+tasks.withType(JavaCompile).configureEach {
+    it.options.encoding = "UTF-8"
+    it.options.release = 21
+}
