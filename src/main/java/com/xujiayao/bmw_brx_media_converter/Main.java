@@ -1,9 +1,18 @@
 package com.xujiayao.bmw_brx_media_converter;
 
+import com.formdev.flatlaf.FlatIntelliJLaf;
+import com.xujiayao.bmw_brx_media_converter.gui.GUI;
+
+import javax.swing.*;
+
 public class Main {
 
 	public static void main(String[] args) {
-		System.out.println("Hello World!");
-		System.out.println("中文字符测试");
+		SwingUtilities.invokeLater(() -> {
+			FlatIntelliJLaf.setup();
+
+			GUI gui = new GUI();
+			gui.setVisible(true);
+		});
 	}
 }

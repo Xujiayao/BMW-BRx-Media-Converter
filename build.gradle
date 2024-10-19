@@ -6,6 +6,19 @@ application {
     mainClass = "com.xujiayao.bmw_brx_media_converter.Main"
 }
 
+repositories {
+    maven {
+        name = "IntelliJ Release"
+        url = "https://www.jetbrains.com/intellij-repository/releases"
+    }
+    mavenCentral()
+}
+
+dependencies {
+    implementation "com.jetbrains.intellij.java:java-gui-forms-rt:242.22855.106"
+    implementation "com.formdev:flatlaf:3.5.2"
+}
+
 java {
     sourceCompatibility = JavaVersion.VERSION_21
     targetCompatibility = JavaVersion.VERSION_21
