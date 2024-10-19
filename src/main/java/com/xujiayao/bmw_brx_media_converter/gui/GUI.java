@@ -10,6 +10,7 @@ import java.awt.*;
 import java.util.Locale;
 
 public class GUI extends JFrame {
+
 	private JPanel contentPane;
 
 	public GUI() {
@@ -39,7 +40,7 @@ public class GUI extends JFrame {
 		contentPane = new JPanel();
 		contentPane.setLayout(new GridLayoutManager(1, 1, new Insets(5, 5, 5, 5), -1, -1));
 		final JLabel label1 = new JLabel();
-		Font label1Font = this.$$$getFont$$$(null, -1, 24, label1.getFont());
+		Font label1Font = this.$$$getFont$$$(null, Font.BOLD, 36, label1.getFont());
 		if (label1Font != null) label1.setFont(label1Font);
 		label1.setText("Hello World!");
 		contentPane.add(label1, new GridConstraints(0, 0, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_FIXED, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
@@ -73,5 +74,4 @@ public class GUI extends JFrame {
 	public JComponent $$$getRootComponent$$$() {
 		return contentPane;
 	}
-
 }
